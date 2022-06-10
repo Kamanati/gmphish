@@ -24,8 +24,11 @@
 - `version 3.05` `newly modified` <br>
 - `voice command instruction to use this tool ADDED``only for termux `
 
-### screen shots 
-![screenshot](.imgs/Adv.png)
+### phishing site..
+![screenshot](.imgs/Screenshot_20220610-111323_Chrome.png)
+
+### orginal site..
+![screenshot](.imgs/Pic2.png)
 
 - `new features has been added in this`
 - `AVD maskurl`
