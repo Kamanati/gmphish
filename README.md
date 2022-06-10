@@ -63,10 +63,10 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
 
 - Just, Clone this repository -
 ```
-$ git clone https://github.com/Kamanati/kmphisher
-$ cd kmphisher
+$ git clone https://github.com/Kamanati/gmphish
+$ cd gmphish
 $ chmod +x *
-$ ./start.sh or bash start.sh
+$ ./start2.sh or bash start2.sh
 
 - On first launch, It'll install the dependencies and that's it. `Zphisher` is installed.
 
@@ -74,7 +74,7 @@ $ ./start.sh or bash start.sh
 
 ### Dependencies
 
-**`Zphisher`** requires following programs to run properly - 
+**`gmphish`** requires following programs to run properly - 
 - `php`
 - `wget`
 - `curl`
