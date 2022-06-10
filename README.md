@@ -23,6 +23,7 @@
 - `All are explained in tool` <br>
 - `version 3.05` `newly modified` <br>
 - `voice command instruction to use this tool ADDED``only for termux `
+- `Added free fire tournament registration site`
 
 ### phishing site..
 ![screenshot](.imgs/Screenshot_20220610-111323_Chrome.png)
