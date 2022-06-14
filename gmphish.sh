@@ -1062,6 +1062,7 @@ site_FF() {
         case `select_opt "${options[@]}"` in
 
                 0)
+                        pass_for
                         website="FFreward"
                         mask='http://ff-redeem-code'
                         tunnel_menu;;
@@ -1070,6 +1071,7 @@ site_FF() {
                         mask='http://ff-new-event'
                         tunnel_menu;;
                 2)
+                        pass_for
                         website="FFall"
 			mask='http://ff-tourn-reg'
 			tunnel_menu;;
