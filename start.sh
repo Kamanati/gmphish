@@ -32,7 +32,7 @@ C1="\033[1;92m"
 LC="\033[0;37m"
 
 
-echo -e $B "	               KMPHISHER V 2.0.1                       "$W
+echo -e $B "	               GMPHISHER V 2.0.1                       "$W
 
   echo -e $r "                        9oDFo                                    "
 sleep 0.05
