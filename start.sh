@@ -398,7 +398,7 @@ case `select_opt "${options[@]}"` in
 esac
 }
 
-nw="29/06/2022"
+nw="24/06/2022"
 
 
 if [[ $now > $nw ]]; then
