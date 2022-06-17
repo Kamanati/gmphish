@@ -2,10 +2,10 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Version-3.0-green?style=for-the-badge">
-  <img src="https://img.shields.io/github/license/kamanati/zphisher?style=for-the-badge">
-  <img src="https://img.shields.io/github/stars/kamanati/zphisher?style=for-the-badge">
-  <img src="https://img.shields.io/github/issues/kamanati/zphisher?color=red&style=for-the-badge">
-  <img src="https://img.shields.io/github/forks/kamanati/zphisher?color=teal&style=for-the-badge">
+  <img src="https://img.shields.io/github/license/kamanati/gmphish?style=for-the-badge">
+  <img src="https://img.shields.io/github/stars/kamanati/gmphish?style=for-the-badge">
+  <img src="https://img.shields.io/github/issues/kamanati/gmphish?color=red&style=for-the-badge">
+  <img src="https://img.shields.io/github/forks/kamanati/gmphish?color=teal&style=for-the-badge">
 </p>
 
 <p align="center">
