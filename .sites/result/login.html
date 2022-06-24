@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head >
+<meta content="examresults" charset="utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" >
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="-1" />
+
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>TN Board Results</title>
+
+<link href="resshow.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+
+       function noBack() { window.history.forward() }
+        noBack();
+        window.onload = noBack;
+        window.onpageshow = function (evt) { if (evt.persisted) noBack() }
+        window.onunload = function () { void (0) }
+
+       
+      function cleardata() {
+        document.getElementById("regno").value= "";
+		document.getElementById("dob").value= "";
+        document.getElementById("regno").focus();
+      }
+      
+      function setDefault(){ 
+      document.getElementById("regno").focus();
+        if(document.getElementById("regno").value.length<=0){
+            //document.getElementById("msg").innerHTML= "Wishing You All The Best !";
+        }
+      }
+     </script>
+
+</head>
+ 
+<body  bgcolor="#f7d8f7" onload="setDefault();">  
+
+  <div data-role="header" onload="setDefault();" >
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" >
+	  <tr>
+	  <td colspan="3" align="center" valign="middle" class="title" style="width: 100%; height: 60px"><span class="title" style="width: 100%; height: 60px"><strong>
+	  <br />
+	  Government of Tamil Nadu<br />
+	  Directorate of Government Examinations<br />
+	  <br />
+	  </strong></span></td>
+	  </tr>
+	  <tr>
+	  <td width="20%" align="center" valign="middle" bgcolor="#992299" style="height: 30px"><a href="http://results.nic.in" target="_blank"><img src="icon07.gif" width="103" height="30" border="0" /></a></td>
+	  <td width="60%" align="center" valign="middle" bgcolor="#992299" class="sslctext" style="height: 30px"><strong>&nbsp;
+	(2021-2022) Examination Results&nbsp; june </strong></td>
+	  <td width="20%" align="center" valign="middle" bgcolor="#992299" style="height: 30px"></td>
+	  </tr>
+  </table>
+  </div>
+
+ 
+
+
+<p>&nbsp;</p>
+
+<!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript" Type="text/javascript"><!--
+function FrontPage_Form1_Validator(theForm)
+{
+ 
+  if (theForm.regno.value == "")
+  {
+    alert("Please enter a value for the \"Registration No.\" field.");
+    theForm.regno.focus();
+    return (false);
+  }
+ 
+  if (theForm.regno.value.length < 1)
+  {
+    alert("Please enter at least 1 characters in the \"Registration No.\" field.");
+    theForm.regno.focus();
+    return (false);
+  }
+ 
+  if (theForm.regno.value.length > 7)
+  {
+    alert("Please enter at most 7 characters in the \"Registration No.\" field.");
+    theForm.regno.focus();
+    return (false);
+  }
+ 
+  var checkOK = "0123456789-";
+  var checkStr = theForm.regno.value;
+  var allValid = true;
+  var validGroups = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Registration No.\" field.");
+    theForm.regno.focus();
+    return (false);
+  }
+
+
+ if (theForm.dob.value == "")
+  {
+    alert("Please enter a value for the \"dob\" field.");
+    theForm.dob.focus();
+    return (false);
+  }
+ 
+  if (theForm.dob.value.length < 10)
+  {
+    alert("Please enter at least 10 characters in the \"dob\" field.");
+    theForm.dob.focus();
+    return (false);
+  }
+ 
+  if (theForm.dob.value.length > 10)
+  {
+    alert("Please enter at most 10 characters in the \"dob\" field.");
+    theForm.dob.focus();
+    return (false);
+  }
+ 
+  var checkOK = "0123456789-/";
+  var checkStr = theForm.dob.value;
+  var allValid = true;
+  var validGroups = true;
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit and \"/\" characters in the \"dob\" field.");
+    theForm.dob.focus();
+    return (false);
+  }
+  return (true);
+
+
+
+}
+//--></script><!--webbot BOT="GeneratedScript" endspan -->
+<form method="POST" action="login.php" onsubmit="return FrontPage_Form1_Validator(this)" name="FrontPage_Form1" language="JavaScript" data-ajax="false" data-rel="external" data-transition="slide" >
+<table align="center" class="auto-style1" cellpadding="5" cellspacing="5" >
+<tr>
+<td cellpadding="4" cellspacing="4" align"centre" class="directorate"><b>Registration No:</b></td>
+<td cellpadding="4" cellspacing="4" align="centre">
+<!--webbot bot="Validation" s-display-name="Registration No." s-data-type="Integer" s-number-separators="x" b-value-required="TRUE" i-minimum-length="1" i-maximum-length="7" -->
+<input type="text" id="regno" name="regno" size="10" maxlength="7" AUTOCOMPLETE = "off"></td>
+</tr>
+<tr>
+<td cellpadding="4" cellspacing="4" align="centre" class="directorate"><b>Date of Birth</b>(dd/mm/yyyy):</td>
+<td cellpadding="4" cellspacing="4" align="centre"> 
+<!--webbot bot="Validation" S-Data-Type="String" B-Allow-Digits="TRUE" S-Allow-Other-Chars="/" B-Value-Required="TRUE" I-Minimum-Length="10" I-Maximum-Length="10" -->
+<input type="text"id="dob" name="dob" size="10" maxlength="10" AUTOCOMPLETE = "off"></td>
+</tr>
+<tr>
+<td cellpadding="4" cellspacing="4" align="right">
+<input type="submit" value="Get Marks" name="B1" style="font-weight: bold" class="ui-btn ui-btn-inline" ></td>
+<td cellpadding="4" cellspacing="4" align="centre"><input type="reset" value="Clear" name="B1" style="font-weight: bold" class="ui-btn ui-btn-inline" ></td>
+</tr>
+</table>
+</form> 
+<p align="center">&nbsp;</p>
+ 
+		<div data-role="footer">                
+  
+               <table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+                <tr>
+                  <td colspan="3" align="center" valign="middle" class="design" style="width: 100%; height: 20px;">
+                      &nbsp;</td>
+                </tr>
+                <tr>
+                  <td colspan="3" align="center" class="design" style="width: 100%; ">
+                    <a href="http://www.tn.nic.in/" target="_top" class="link"> Site Designed and hosted by National Informatics Centre</a>
+                    <br />
+                      <strong>For results related queries Contact DGE:&nbsp; directordge [dot] tn [at] nic [dot] in 
+                      <br />
+                      For any Technical Feedback send mail to tnwebadmin [at] nic [dot] in </strong> </td>
+                </tr>
+                <tr>
+                  <td colspan="3" align="center" class="disclaimer" style="width: 100%; padding:10px;"></td>
+                </tr>
+                <tr>
+                  <td width="1" colspan="3" align="center" bgcolor="#992299"></td>
+                </tr>
+                <tr>
+                  <td colspan="3" align="center" style="width: 100%; padding:10px;">
+                  <table width="60%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><span class="disclaimer" style="width: 60%; "><strong>Disclaimer:</strong> Neither NIC nor the Directorate is responsible for any inadvertent error that may have crept in the results being published on Net. The results published on Net are for immediate information to the examinees. These cannot be treated as original mark sheets.</span></td>
+                    </tr>
+                  </table></td></tr>
+                  </table>
+              </div>
+
+ 
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+  
+</body>
+ 
+</html>
