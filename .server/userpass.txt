@@ -1,0 +1,1 @@
+username: hasa  password: u device: whoami
