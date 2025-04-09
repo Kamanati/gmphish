@@ -1,8 +1,8 @@
 FROM debian:latest
-LABEL MAINTAINER="https://github.com/Kamanati/kmphisher"
+LABEL MAINTAINER="https://github.com/Kamanati/gmphish"
 
-WORKDIR /kmphisher/
-ADD . /kmphisher 
+WORKDIR /gmphish/
+ADD . /gmphish 
 
 RUN apt update && \
     apt full-upgrade -y && \

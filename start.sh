@@ -747,8 +747,9 @@ install_cloudflared() {
 		if [[ ! -e "/system/bin/adb"  ]]; then
 		play-audio /data/data/com.termux/files/home/kmphisher/.misc/Clinstall.wav &> /dev/null;
 		else
+                     printf "\r"
 		#espeak -s 118 'cloudflared has started installing'&> /dev/null;
-		fi 
+                fi
 		arch=`uname -m`
 		if [[ ("$arch" == *'arm'*) || ("$arch" == *'Android'*) ]]; then
 			download_cloudflared 'https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm'
